@@ -1,0 +1,11 @@
+{
+	"name": "myloadsk",
+	"description": "Library for working with loads using skia.",
+	"version": "1.0.0",
+	"homepage": "https://github.com/code-en-code/MyLoadSk",
+	"mainsrc": "/src",
+	"projects": [],
+	"dependencies": {
+		"https://github.com/code-en-code/mythread": "^v1.0.0"
+	}
+}

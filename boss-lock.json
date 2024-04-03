@@ -1,0 +1,14 @@
+{
+	"hash": "d41d8cd98f00b204e9800998ecf8427e",
+	"updated": "2024-04-03T14:10:25.9979813-03:00",
+	"installedModules": {
+		"https://github.com/code-en-code/mythread": {
+			"name": "mythread",
+			"version": "v1.0.0",
+			"hash": "914f741c0772517e703f651a28ecdb99",
+			"artifacts": {},
+			"failed": false,
+			"changed": false
+		}
+	}
+}

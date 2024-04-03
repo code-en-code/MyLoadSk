@@ -1,0 +1,940 @@
+object IndexView: TIndexView
+  Left = 0
+  Top = 0
+  Caption = 'MyLoad'
+  ClientHeight = 550
+  ClientWidth = 917
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 8
+    Top = 64
+  end
+  object tbcBody: TTabControl
+    Align = Contents
+    Size.Width = 917.000000000000000000
+    Size.Height = 550.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 4
+    TabPosition = PlatformDefault
+    Sizes = (
+      917s
+      524s
+      917s
+      524s)
+    object tabPage1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 70.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabPage1'
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object vsbPage1: TVertScrollBox
+        Align = Client
+        Size.Width = 917.000000000000000000
+        Size.Height = 524.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 901.000000000000000000
+        Viewport.Height = 524.000000000000000000
+        object lytPage1Line1: TLayout
+          Align = Top
+          Size.Width = 901.000000000000000000
+          Size.Height = 330.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object lytPage1Col1: TLayout
+            Align = Left
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lytPage1Buttons1: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load1: TButton
+                Align = Client
+                Size.Width = 300.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Load1'
+                OnClick = btnPage1Load1Click
+              end
+            end
+            object lytPage1Load1: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col2: TLayout
+            Align = Client
+            Size.Width = 301.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            object lytPage1Buttons2: TLayout
+              Align = Top
+              Size.Width = 301.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load2: TButton
+                Align = Left
+                Size.Width = 100.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 9
+                Text = 'Load2'
+                OnClick = btnPage1Load2Click
+              end
+              object btnPage1Stop2: TButton
+                Align = Left
+                Position.X = 100.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 8
+                Text = 'Stop'
+                OnClick = btnPage1Stop2Click
+              end
+              object btnPage1Text2: TButton
+                Align = Left
+                Position.X = 200.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 7
+                Text = 'Text'
+                OnClick = btnPage1Text2Click
+              end
+            end
+            object lytPage1Load2: TLayout
+              Align = Client
+              Size.Width = 301.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col3: TLayout
+            Align = Right
+            Position.X = 601.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            object lytPage1Buttons3: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load3: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 6
+                Text = 'Load3'
+                OnClick = btnPage1Load3Click
+              end
+              object btnPage1Stop3: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 9
+                Text = 'Stop'
+                OnClick = btnPage1Stop3Click
+              end
+              object btnPage1ModeA3: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 8
+                Text = 'Mode1'
+                OnClick = btnPage1ModeA3Click
+              end
+              object btnPage1ModeB3: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 7
+                Text = 'Mode2'
+                OnClick = btnPage1ModeB3Click
+              end
+            end
+            object lytPage1Load3: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+        end
+        object lytPage1Line2: TLayout
+          Align = Top
+          Position.Y = 330.000000000000000000
+          Size.Width = 901.000000000000000000
+          Size.Height = 330.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object lytPage1Col4: TLayout
+            Align = Left
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            object lytPage1Buttons4: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load4: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 8
+                Text = 'Load4'
+                OnClick = btnPage1Load4Click
+              end
+              object btnPage1Text4: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 7
+                Text = 'Text'
+                OnClick = btnPage1Text4Click
+              end
+              object btnPage1Style4: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 6
+                Text = 'Style'
+                OnClick = btnPage1Style4Click
+              end
+              object btnPage1Stop4: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 5
+                Text = 'Stop'
+                OnClick = btnPage1Stop4Click
+              end
+            end
+            object lytPage1Load4: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col5: TLayout
+            Align = Client
+            Size.Width = 301.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            object lytPage1Buttons5: TLayout
+              Align = Top
+              Size.Width = 301.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load5: TButton
+                Align = Left
+                Size.Width = 100.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 6
+                Text = 'Load5'
+                OnClick = btnPage1Load5Click
+              end
+              object btnPage1Box5: TButton
+                Align = Left
+                Position.X = 100.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 5
+                Text = 'Box'
+                OnClick = btnPage1Box5Click
+              end
+              object btnPage1Stop5: TButton
+                Align = Left
+                Position.X = 200.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 4
+                Text = 'Stop'
+                OnClick = btnPage1Stop5Click
+              end
+            end
+            object lytPage1Load5: TLayout
+              Align = Client
+              Size.Width = 301.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col6: TLayout
+            Align = Right
+            Position.X = 601.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lytPage1Buttons6: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load6: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 6
+                Text = 'Load6'
+                OnClick = btnPage1Load6Click
+              end
+              object btnPage1TextOne6: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 4
+                Text = 'Text1'
+                OnClick = btnPage1TextOne6Click
+              end
+              object btnPage1TextTwo6: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Text2'
+                OnClick = btnPage1TextTwo6Click
+              end
+              object btnPage1Stop6: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 5
+                Text = 'Stop'
+                OnClick = btnPage1Stop6Click
+              end
+            end
+            object lytPage1Load6: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+        end
+        object lytPage1Line3: TLayout
+          Align = Top
+          Position.Y = 660.000000000000000000
+          Size.Width = 901.000000000000000000
+          Size.Height = 330.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object lytPage1Col7: TLayout
+            Align = Left
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lytPage1Buttons7: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load7: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Load7'
+                OnClick = btnPage1Load7Click
+              end
+              object btnPage1Box7: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = 'Box'
+                OnClick = btnPage1Box7Click
+              end
+              object btnPage1Stop7: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Stop'
+                OnClick = btnPage1Stop7Click
+              end
+              object btnPage1Radius7: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Radius'
+                OnClick = btnPage1Radius7Click
+              end
+            end
+            object lytPage1Load7: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col8: TLayout
+            Align = Client
+            Size.Width = 301.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            object lytPage1Buttons8: TLayout
+              Align = Top
+              Size.Width = 301.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load8: TButton
+                Align = Left
+                Size.Width = 100.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Load8'
+                OnClick = btnPage1Load8Click
+              end
+              object btnPage1Align8: TButton
+                Align = Left
+                Position.X = 100.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = 'Align'
+                OnClick = btnPage1Align8Click
+              end
+              object btnPage1Stop8: TButton
+                Align = Left
+                Position.X = 200.000000000000000000
+                Size.Width = 100.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Stop'
+                OnClick = btnPage1Stop8Click
+              end
+            end
+            object lytPage1Load8: TLayout
+              Align = Client
+              Size.Width = 301.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col9: TLayout
+            Align = Right
+            Position.X = 601.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            object lytPage1Buttons9: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load9: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Load9'
+                OnClick = btnPage1Load9Click
+              end
+              object btnPage1TextOne9: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = 'Text1'
+                OnClick = btnPage1TextOne9Click
+              end
+              object btnPage1TextTwo9: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Text2'
+                OnClick = btnPage1TextTwo9Click
+              end
+              object btnPage1Stop9: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Stop'
+                OnClick = btnPage1Stop9Click
+              end
+            end
+            object lytPage1Load9: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+        end
+        object lytPage1Line4: TLayout
+          Align = Top
+          Position.Y = 990.000000000000000000
+          Size.Width = 901.000000000000000000
+          Size.Height = 330.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object lytPage1Col10: TLayout
+            Align = Left
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object lytPage1Buttons10: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load10: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Load10'
+                OnClick = btnPage1Load10Click
+              end
+              object btnPage1ProgressHalf10: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = '50%'
+                OnClick = btnPage1ProgressHalf10Click
+              end
+              object btnPage1Stop10: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Stop'
+                OnClick = btnPage1Stop10Click
+              end
+              object btnPage1ProgressFull10: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = '100%'
+                OnClick = btnPage1ProgressFull10Click
+              end
+            end
+            object lytPage1Load10: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col11: TLayout
+            Align = Client
+            Size.Width = 301.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object lytPage1Buttons11: TLayout
+              Align = Top
+              Size.Width = 301.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load11: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Load11'
+                OnClick = btnPage1Load11Click
+              end
+              object btnPage1ProgressHalf11: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = '50%'
+                OnClick = btnPage1ProgressHalf11Click
+              end
+              object btnPage1Stop11: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Stop'
+                OnClick = btnPage1Stop11Click
+              end
+              object btnPage1ProgressFull11: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = '100%'
+                OnClick = btnPage1ProgressFull11Click
+              end
+            end
+            object lytPage1Load11: TLayout
+              Align = Client
+              Size.Width = 301.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col12: TLayout
+            Align = Right
+            Position.X = 601.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lytPage1Buttons12: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load12: TButton
+                Align = Left
+                Size.Width = 150.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Load12'
+                OnClick = btnPage1Load12Click
+              end
+              object btnPage1Stop12: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 150.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Stop'
+                OnClick = btnPage1Stop12Click
+              end
+            end
+            object lytPage1Load12: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+        end
+        object lytPage1Line5: TLayout
+          Align = Top
+          Position.Y = 1320.000000000000000000
+          Size.Width = 901.000000000000000000
+          Size.Height = 330.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object lytPage1Col13: TLayout
+            Align = Left
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object lytPage1Buttons13: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load13: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Load13'
+                OnClick = btnPage1Load13Click
+              end
+              object btnPage1Stop13: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Stop'
+                OnClick = btnPage1Stop13Click
+              end
+              object btnPage1Text13: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Text'
+                OnClick = btnPage1Text13Click
+              end
+              object btnPage1Box13: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = 'Box'
+                OnClick = btnPage1Box13Click
+              end
+            end
+            object lytPage1Load13: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col14: TLayout
+            Align = Client
+            Size.Width = 301.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object lytPage1Buttons14: TLayout
+              Align = Top
+              Size.Width = 301.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load14: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Load14'
+                OnClick = btnPage1Load14Click
+              end
+              object btnPage1Stop14: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Stop'
+                OnClick = btnPage1Stop14Click
+              end
+              object btnPage1TextOne14: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Text1'
+                OnClick = btnPage1TextOne14Click
+              end
+              object btnPage1TextTwo14: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = 'Text2'
+                OnClick = btnPage1TextTwo14Click
+              end
+            end
+            object lytPage1Load14: TLayout
+              Align = Client
+              Size.Width = 301.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+          object lytPage1Col15: TLayout
+            Align = Right
+            Position.X = 601.000000000000000000
+            Size.Width = 300.000000000000000000
+            Size.Height = 330.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lytPage1Buttons15: TLayout
+              Align = Top
+              Size.Width = 300.000000000000000000
+              Size.Height = 30.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object btnPage1Load15: TButton
+                Align = Left
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Text = 'Load15'
+                OnClick = btnPage1Load15Click
+              end
+              object btnPage1Stop15: TButton
+                Align = Left
+                Position.X = 225.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Stop'
+                OnClick = btnPage1Stop15Click
+              end
+              object btnPage1Text15: TButton
+                Align = Left
+                Position.X = 75.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 3
+                Text = 'Text'
+                OnClick = btnPage1Text15Click
+              end
+              object btnPage1Box15: TButton
+                Align = Left
+                Position.X = 150.000000000000000000
+                Size.Width = 75.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                Text = 'Box'
+                OnClick = btnPage1Box15Click
+              end
+            end
+            object lytPage1Load15: TLayout
+              Align = Client
+              Size.Width = 300.000000000000000000
+              Size.Height = 300.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+            end
+          end
+        end
+      end
+    end
+    object tabPage2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 70.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabPage2'
+      ExplicitSize.cx = 70.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+  object Timer2: TTimer
+    Interval = 500
+    OnTimer = Timer2Timer
+    Left = 56
+    Top = 64
+  end
+end
